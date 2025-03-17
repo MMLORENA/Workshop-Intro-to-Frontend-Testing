@@ -1,0 +1,14 @@
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 65px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.images__group {
+  display: flex;
+  gap: 50px;
+}
