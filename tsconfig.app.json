@@ -2,32 +2,28 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": null,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    // ... other options
-    "types": [
-      "@testing-library/jest-dom"
-    ]
+
+    /* Vitest + Testing Library */
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+
+    /* Fix para referencias */
+    "composite": true
   },
-  "include": [
-    "src",
-    "node_modules/vitest/globals.d.ts"
-  ]
+  "include": ["src"]
 }
