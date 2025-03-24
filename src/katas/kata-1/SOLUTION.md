@@ -1,0 +1,21 @@
+Tests:
+
+- Given a Product Card
+  - When it receives "Bootcamp Full-Stack" as product name
+    - Then the user should see the product name "Full-Stack Bootcamp"
+  - When it receives "0" as initial quantity
+    - Then the user should see the quantity "0"
+  - When it receives "10" as stock
+    - Then the user should see the stock "10"
+  - When the quantity is equal to the available stock
+    - Then the user should see the message "Sold Out"
+  - When the quantity is equal to 0
+    - Then the user should see the "Remove" button disabled
+  - When the stock is equal to 0
+    - Then the user should see the "Add" button disabled
+  - When the user clicks on the "Add" button
+    - Then the quantity should increase by 1
+  - When the user clicks on the "Remove" button
+    - Then the quantity should decrease by 1
+  - When the user clicks on the "Add" button and the stock is equal to the quantity
+    - Then the user should see the message "Sold Out"
