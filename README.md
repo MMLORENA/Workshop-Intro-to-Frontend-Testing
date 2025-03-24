@@ -46,3 +46,7 @@ npm start
 - Kata 2: `npm run test:kata-2`
 - Kata 3: `npm run test:kata-3`
 - Kata 4: `npm run test:kata-4`
+
+## Workshop guideline
+
+👉 Workshop guideline: [Workshop Guideline](./GUIDELINE.md)
